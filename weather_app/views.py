@@ -22,7 +22,7 @@ def index(request):
 
     for city in cities:
 
-        url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=7b1ab71e47e805b7c7afeb117fa10dd6'
+        url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=YourWeatherAPIKey'
 
         r = requests.get(url.format(city.name))
         #print(r)
