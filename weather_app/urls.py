@@ -1,0 +1,11 @@
+#the_weather/weather/urls.py
+
+
+from django.contrib import admin
+from django.urls import path
+from . import views 
+
+urlpatterns = [
+    path('', views.index),
+    path('delete/<int:id>', views.delete),
+]
